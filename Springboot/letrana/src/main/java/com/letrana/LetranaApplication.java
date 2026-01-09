@@ -1,4 +1,4 @@
-package com.example.letrana;
+package com.letrana;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
