@@ -1,4 +1,10 @@
-            package com.letrana.model;
+package com.letrana.model;
+
+import java.time.LocalDate;
+
+
+
+import com.letrana.enumerador.Estado;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,20 +17,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
-@Getter
+@AllArgsConstructor
 @Setter
-@Table(name="usuario")
-public class Usuario {
+@Getter
+@Table(name="pedido")
+public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
-    private String dni;
-    private int telefono;
-    private String nombre;
-    private String apellido1;
-    private String apellido2;
-    private String correo;
-    private String contraseña;
+    private LocalDate fechapedido;
+    private double total;
+    private Estado estado;
+
 }
