@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Autor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int codigo;
+    private Long codigo;
     private String nombre;
     private String apellido1;
     private String apellido2;
